@@ -1,0 +1,36 @@
+# Environment / secrets
+.env
+.env.*
+*.key
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+env/
+.venv/
+
+# Data files (regenerable Spark outputs only — source datasets ARE tracked)
+pyspark_results.json
+pyspark_rag_results.json
+sf_6_export.csv
+syn_6_export.csv
+
+# Decompressed form of data/QueryResults.csv.gz — regenerated automatically by
+# the notebook on first run, do not commit the 115MB uncompressed version
+data/QueryResults.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Model checkpoints / large artefacts
+*.bin
+*.safetensors
+*.pt
+*.h5
+checkpoints/
